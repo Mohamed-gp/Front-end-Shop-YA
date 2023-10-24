@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
             <header className='bg-blue-400 text-white'>
-                <div className="container flex text-xl justify-between px-4 items-center">
+                <div className="container flex text-xl justify-between p-4  items-center">
                     <FontAwesomeIcon icon={faBars} className='md:hidden cursor-pointer'/>
                     <div className='hidden md:flex  items-center'>
                         <FontAwesomeIcon icon={faShop} />
