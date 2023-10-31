@@ -26,10 +26,10 @@ const Header = () => {
                 <div className="top-header bg-[#34495e]">
                     <div className="container flex text-xl justify-between p-4  items-center">
                         <FontAwesomeIcon icon={faBars} className='lg:hidden cursor-pointer' onClick={toggleOpen} />
-                        <div className='hidden lg:flex  items-center gap-1'>
+                        <Link to="/" className='hidden lg:flex  items-center gap-1'>
                             <FontAwesomeIcon icon={faShop} />
                             <p>محمد شوب</p>
-                        </div>
+                        </Link>
                         <p className=' text-amber-400'>اهلا و سهلا بكم</p>
                         <div className='flex items-center gap-1'>
                             <p>123-456-789</p>

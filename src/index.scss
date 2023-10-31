@@ -13,3 +13,16 @@ header {}
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
+
+@media (min-width: 1024px) {
+    
+    .product{
+        width: 48%;
+    }
+}
+
+@media (max-width: 540px) {
+    .product{
+        font-size: 10px;
+    }
+}
