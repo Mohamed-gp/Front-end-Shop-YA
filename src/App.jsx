@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Header from './component/Header'
 import Details from './component/Details'
+import Footer from './component/Footer'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='product/:id' element={<Details />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )

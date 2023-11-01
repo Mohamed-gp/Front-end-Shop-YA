@@ -2,7 +2,9 @@ import React from 'react'
 import Ads from '../component/Ads'
 import Categories from '../component/Categories'
 import Products from '../component/Products'
-import Laptopslider from '../component/Laptopslider'
+import Laptopsslider from '../component/Laptopsslider'
+import Mobilesslider from '../component/Mobileslider'
+import Brands from '../component/Brands'
 
 const Home = () => {
   return (
@@ -10,7 +12,9 @@ const Home = () => {
     <Ads/>
     <Categories/>
     <Products/>
-    <Laptopslider/>
+    <Laptopsslider/>
+    <Mobilesslider/>
+    <Brands/>
     </>
   )
 }
