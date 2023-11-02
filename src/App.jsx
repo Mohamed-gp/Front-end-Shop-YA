@@ -6,6 +6,7 @@ import Details from './component/Details'
 import Footer from './component/Footer'
 import Shop from './component/Shop'
 import Electronics from './pages/Electronics'
+import Cart from './pages/Cart'
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
           <Route path='product/:id' element={<Details />} />
           <Route path='shop/:id' element={<Shop/>} />
           //electronics product
-          <Route path='electronics' element={<Electronics/>} />
+          <Route path='/electronics' element={<Electronics/>} />
+          <Route path='/cart' element={<Cart/>} />
         </Routes>
         <Footer/>
       </BrowserRouter>
