@@ -2,6 +2,7 @@ import { faArrowLeft, faArrowRight, faCartPlus, faStar } from '@fortawesome/free
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { products } from '../data/products'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -29,9 +30,9 @@ const Mobilesslider = () => {
                     {phonesData.map((product) => {
                         return (
                             <div className='flex-col pb-1 items-center justify-center flex w-60 h-80 bg-white' key={product.id}>
-                                <div className='img'>
+                                <Link to={`/shop/${product.id}`} className='img'>
                                     <img src={product.image} alt="" className='w-24 mb-2' />
-                                </div>
+                                </Link>
                                 <div className='flex px-4  flex-col gap-3 justify-center items-center'>
                                     <p className='font-bold h-14'>{product.title}</p>
                                     <div className='flex gap-4 items-center'>

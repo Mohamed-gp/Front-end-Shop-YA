@@ -9,8 +9,8 @@ const Footer = () => {
         <>
             <footer>
                 <div className="container flex flex-col p-4">
-                    <div className='items-center flex justify-between'>
-                        <p className='font-bold text-[#2c3e50] text-3xl'>متواجدین دائما لمساعدتك</p>
+                    <div className='items-center flex flex-col md:flex-row justify-between'>
+                        <p className='font-bold text-[#2c3e50] text-3xl md:text-left text-center mb-3 md:m-0'>متواجدین دائما لمساعدتك</p>
                         <div className='flex text-lg font-bold opacity-80 flex-col gap-2 items-center justify-center'>
                             <p>تواصل معانا عبر الإيميل</p>
                             <div className='flex  text-blue-950 gap-2 items-center'>
@@ -19,7 +19,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex justify-between gap-4 my-6'>
+                    <div className='flex justify-between gap-4 my-6 flex-wrap'>
                         <div className='lg:w-1/5  md:w-1/3 w-full flex flex-col space-y-4'>
                             <p className='font-bold text-3xl'>الإلكترونيات</p>
                             <p className='text-lg '>الکامیرات و تسجیل فیدیو</p>

@@ -5,7 +5,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom"
 
 
-const Product = ({ product }) => {
+const Product = ({product}) => {
     const [changeimage, setchangeimage] = useState(0)
     const increaseimgindex = () => {
         if (changeimage == 0) {

@@ -18,7 +18,7 @@ const Details = () => {
                         <>
                             <div className='bg-white'>
 
-                                <div className="container flex p-4  bg-white items-center gap-10">
+                                <div className="container flex p-4 md:flex-row flex-col bg-white items-center gap-10">
                                     <div className="flex flex-col items-center w-1/2">
                                         <div>
                                             <img src={`${e.assets[imagenumber]}`} className='w-96' />
@@ -26,7 +26,7 @@ const Details = () => {
                                         <div className='flex gap-2'>
                                             {e.assets.map((images, imageindex) => {
                                                 return (
-                                                    <div className='border-2' onClick={() => { changeimage(imageindex) }}>
+                                                    <div className={`border-2 ${imagenumber == imageindex ? "border-black opacity-50" :""}`} onClick={() => { changeimage(imageindex) }}>
                                                         <img src={`${images}`} className='w-32' />
                                                     </div>
                                                 )
@@ -45,7 +45,7 @@ const Details = () => {
                                         </div>
                                         <p className="flex  gap-2 font-bold text-2xl">${e.price - e.price * (e.discount / 100)}<span className="text-red-500 line-through">${e.price}</span></p>
                                         <p className='font-bold text-gray-500 text-3xl'>الكمية</p>
-                                        <div className='flex gap-2'>
+                                        <div className='flex gap-2 flex-wrap'>
                                             <input type="number" name="" id="" className='border-2'/>
                                             <button className='px-6 py-2 bg-[#2a7ddbb3] text-white font-bold text-3xl rounded-sm'>إضافه الی سله التسوق</button>
                                         </div>
